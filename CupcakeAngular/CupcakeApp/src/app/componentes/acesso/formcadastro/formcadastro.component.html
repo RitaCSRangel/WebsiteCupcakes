@@ -1,0 +1,26 @@
+<div class="infos-cadastro">
+
+    <h1>Cadastro</h1>
+
+    <div class="cadastro-input-container">
+        <p class="input-label">Nome</p>
+        <input class="aproximar" type="text" type="text" name="nomeUsuario" [(ngModel)]="nomeUsuario" placeholder="Insira seu nome aqui" />
+    </div>
+
+    <div class="cadastro-input-container">
+        <p class="input-label">E-mail</p>
+        <input class="aproximar" type="text" type="email" name="emailUsuario" [(ngModel)]="emailUsuario" placeholder="Insira seu e-mail aqui" />
+    </div>
+
+    <div class="cadastro-input-container">
+        <p class="input-label">Senha</p>
+        <input class="aproximar" type="text" type="password" name="senhaUsuario" [(ngModel)]="senhaUsuario" placeholder="Insira sua senha aqui" maxlength="10"/>
+    </div>
+
+    <div class="botao-cadastro-container">
+        <div class="botao-cadastro" (click)="CadastrarConta()">Cadastrar</div>
+    </div>
+
+    <p class="cadastro-subtexto"> Já possui conta? <span class="botao-cadastre-se" (click)="Navegar('/login')">Entre!</span></p>
+
+</div>

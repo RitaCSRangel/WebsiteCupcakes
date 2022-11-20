@@ -1,0 +1,35 @@
+<!-- Dentro do container de menu-->
+<div class="produtos-container">
+
+    <!-- Para cada produto do cardápio-->
+    <div>
+
+        <!-- Gerar um card de produto-->
+        <div class="card" *ngFor="let produto of produtos">
+
+            <div class="card-infos" id="{{produto.ProdutoId}}">
+
+                <img src="./assets/sugarrush.png" class="card-imagem" alt="Logo Sugar Rush">
+
+                <div class="card-produto">
+
+                    <p class="card-titulo">{{produto.ProdutoNome}}</p>
+
+                    <p class="card-descricao aproximar">UN <span>R$ {{produto.ProdutoPreco}},00</span></p>
+
+                </div>
+
+            </div>
+
+            <div class="card-botoes">
+
+                <div class="botao" [style.color]="corBotaoAdicionar" (click)="IncrementarProdutosDoCarrinho(produto)">+</div>
+                <div class="botao" [style.color]="corBotaoDecrementar" (click)="DecrementarProdutosDoCarrinho(produto)">-</div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

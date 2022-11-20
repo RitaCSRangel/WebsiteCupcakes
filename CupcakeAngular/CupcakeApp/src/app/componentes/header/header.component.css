@@ -1,0 +1,74 @@
+.infos-header {
+    position: absolute;
+    width: 100%;
+    height: 65px;
+    top: 0;
+    left: 0;
+    background-color: #863D3D;
+}
+
+.header-container {
+    position: relative;
+    width: auto;
+    height: 76px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}
+
+.header-elemento {
+    position: relative;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 30px;
+}
+
+.logo {
+    width: 15px;
+    height: 15px;
+}
+
+.header-titulo {
+    position: relative;
+    font-family: 'Imprima';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.header-saudacao {
+    position: relative;
+    width: 105px;
+    height: 21px;
+    margin-right: -20px;
+    font-family: 'Imprima';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+.header-usuario {
+    position: relative;
+    width: auto ;
+    height: 22px;
+    font-family: 'Imprima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+
+.icone-cor{
+    color: #FFFFFF;
+}

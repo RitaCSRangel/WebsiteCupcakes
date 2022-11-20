@@ -1,0 +1,91 @@
+.infos-cadastro {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+h1 {
+    width: 209px;
+    height: 65px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 65px;
+
+    color: #863D3D;
+}
+
+.input-label {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 20px;
+    color: #979797;
+}
+
+input {
+    box-sizing: border-box;
+    position: relative;
+    width: 421px;
+    height: 59px;
+    padding-left: 10px;
+    background: rgba(255, 200, 200, 0.35);
+    border: 1px solid #FFC8C8;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+}
+
+input:focus {
+    outline: none !important;
+    border: 1px solid #863D3D;
+}
+
+.botao-cadastro-container {
+    width: 100%;
+}
+
+.botao-cadastro {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    padding: 15px 25px;
+    gap: 10px;
+    background: #863D3D;
+    border-radius: 10px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    color: #FFFFFF;
+}
+
+.cadastro-subtexto {
+    width: auto;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #979797;
+}
+
+.botao-cadastre-se {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #863D3D;
+}
+
+.aproximar {
+    margin-top: -4%;
+}

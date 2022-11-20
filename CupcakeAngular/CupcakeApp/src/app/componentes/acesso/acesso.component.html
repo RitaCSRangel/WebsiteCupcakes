@@ -1,0 +1,13 @@
+<div class="pagina-acesso">
+
+    <div class="imagem-lateral" #imagemLateral></div>
+
+    <div class="container-formulario" [ngStyle]="{'margin-left.px': imagemLateral.offsetWidth}">
+
+        <!-- O router vai chamar o componnente correspondente a rota filha de home, ou seja:  -->
+        <!-- home/login vai chamar o componente formlogin -->
+        <!-- home/cadastro vai chamar o componente formcadastro -->
+        <router-outlet></router-outlet>
+
+    </div>
+</div>

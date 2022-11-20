@@ -1,0 +1,25 @@
+<!-- Header -->
+<header>
+
+    <!-- Nav -->
+    <app-header></app-header>
+
+    <!-- Banner -->
+    <div class="banner" #banner></div>
+
+</header>
+
+<!-- Body -->
+
+<body [ngStyle]="{'margin-top.px': banner.offsetHeight}">
+
+    <router-outlet></router-outlet>
+
+</body>
+
+<!-- Footer -->
+<footer>
+
+    <app-footer></app-footer>
+
+</footer>

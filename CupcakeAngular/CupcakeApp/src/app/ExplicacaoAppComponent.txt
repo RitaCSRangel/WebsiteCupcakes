@@ -1,0 +1,69 @@
+--------------------------------------------------------------- 1. O que é o Angular e seus componentes? -------------------------------------------------------------- 
+
+Como dito anteriormente, o Angular é um framework que permite a criação de projetos front-end a partir do uso de componentes. Cada funcionalidade do website deve ser criada como um componente
+separado dentro de um projeto Angular, exemplo: Headers, Footers, Formulário de Inscrição, Formulário de Login etc. Além de ser separado por componentes, o Angular também oferece uma hierarquia
+de componentes na qual o app.component é o componente pai e os componentes criados dentro da sua pasta são seus componentes filhos. 
+
+----------------------------------------------------- 2. Qual é a estrutura do componente principal chamado app? ------------------------------------------------------ 
+
+- app.component.html
+É aonde fica o HTML desse componente. Ou seja, é aonde se encontra a estrutura do site.
+
+- app.component.css
+É aonde fica o css desse componente. Ou seja, é aonde se encontra o estilo/aparência do site.
+
+- app.component.ts
+É aonde fica o typescript desse componente. Ou seja, é onde se encontram as funcionalidades performadas pelo site.
+
+- app.module.ts
+É aonde estão definidos todos os módulos, componentes e serviços que serão usados nesse projeto.
+
+- app-routing.module
+É aonde estão definidas as rotas das páginas do website e qual componente (s) essas páginas renderizam. É aqui que são definidos quem são os componentes pais e seus filhos também.
+
+----------------------------------------------------------- 3. Qual é a estrutura de um componente comum? ----------------------------------------------------------- 
+
+- nomeDoComponente.component.html
+- nomeDoComponente.component.css
+- nomeDoComponente.component.ts
+
+Lembre-se que todo o componente e serviço deve ser declarado no app.module. Ao gerar componentes pelo cmd essa declaração é feita automaticamente
+e para gerar um novo componente acesse a pasta da aplicação pelo cmd (modo administrador) e execute o comando ng g c componente/nomeComponente
+ng -> diretriz do angular
+g -> generate
+c -> component
+componente/nomeComponente -> Pasta e nome do componente
+
+----------------------------------------------------- 4. Como um componente é referênciado para ser renderizado? ----------------------------------------------------- 
+
+No app.component.html a única tag necessária é o <router-outlet></router-outlet>
+Router-Outlet é uma diretiva Angular da biblioteca de roteadores que é usada para inserir o componente correspondente às rotas a serem exibidas na tela.
+
+Além disso, como dito acima, as rotas definem qual componente vai ser chamado em tela então, ao chamar a rota Home os componentes da home serão renderizados.
+Dentro de cada HTML os componentes são chamados através de tags HTML que possuam o nome do selector daquele componente. Ou seja, cada componente tem uma 
+propriedade chamada selector e, ao chamá-la em um HTML, aquele componente é renderizado naquele local. 
+
+<app-nomeDoComponente></app-nomeDoComponente>
+
+----------------------------------------------------- 5. Como essa aplicação se comunica com o backend? ----------------------------------------------------- 
+
+A aplicação angular pode passar dados entre componentes ou se comunicar com elementos externos (como o backend da aplicação) através dos arquivos
+de service.
+
+Lembre-se que todo o componente e serviço deve ser declarado no app.module. Ao gerar serviços pelo cmd essa declaração NÃO é feita automaticamente
+e para gerar um novo service acesse a pasta da aplicação pelo cmd (modo administrador) e execute o comando ng g s service/nomeService
+ng -> diretriz do angular
+g -> generate
+s -> service
+service/nomeService -> Pasta e nome do service
+
+----------------------------------------------------- 6. O que são models? ----------------------------------------------------- 
+
+Models são opicionais e servem para definir tipos customizados de dado. É comum utilizar models para criar tipos que correspondam
+aos dados a serem armazenados/recebidos nas APIs. Dentro de um model usa-se uma interface preenchida com os campos daquele tipo
+de dado. 
+
+------------------------------------------------------------------------ ANOTAÇÕES  --------------------------------------------------------------------------- 
+
+- Onde se importam fontes e ícones?
+Usando tags de link rel no index.html que é o primeiro html a ser chamado em uma execução de website.

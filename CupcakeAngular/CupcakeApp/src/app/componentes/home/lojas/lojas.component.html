@@ -1,0 +1,35 @@
+<div class="infos-lojas">
+
+    <div class="lojas-container">
+
+        <!-- Para cada loja obtida no array de lojas listada pela diretiva *ngFor-->
+        <div *ngFor="let loja of lojas" id="{{loja.ContaId}}">
+
+            <!-- Cria um card de loja -->
+            <div class="card" (click)="Navegar('/cardapio', loja.ContaId)">
+
+                <p class="card-titulo">{{loja.ContaNome}}</p>
+
+                <img src="./assets/sugarrush.png" class="card-imagem aproximar" alt="Logo Sugar Rush">
+
+                <div class="aproximar">
+                    <p class="card-endereco">{{loja.ContaRua}}, {{loja.ContaNumero}} {{loja.ContaComplemento}}</p>
+                    <p class="card-endereco aproximar">{{loja.ContaBairro}}</p>
+                    <p class="card-endereco aproximar">{{loja.ContaCep}}</p>
+                </div>
+
+                <!-- Status -->
+                <p class="card-status" [style.color]="corAberto" *ngIf="loja.ContaStatus == 1; else Blockstatus01">
+                    Aberto</p>
+
+                <ng-template #Blockstatus01>
+                    <p class="card-status" [style.color]="corFechado">Fechado</p>
+                </ng-template>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

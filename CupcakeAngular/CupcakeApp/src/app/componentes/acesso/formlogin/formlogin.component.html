@@ -1,0 +1,21 @@
+<div class="infos-login">
+
+    <h1>Login</h1>
+
+    <div class="login-input-container">
+        <p class="input-label">E-mail</p>
+        <input class="aproximar" type="text" type="email" name="emailUsuario" [(ngModel)]="emailUsuario" placeholder="Insira seu e-mail aqui" />
+    </div>
+
+    <div class="login-input-container">
+        <p class="input-label">Senha</p>
+        <input class="aproximar" type="text" type="password" name="senhaUsuario" [(ngModel)]="senhaUsuario" placeholder="Insira sua senha aqui" />
+    </div>
+
+    <div class="botao-login-container">
+        <div class="botao-login" (click)="EntrarComConta()">Entrar</div>
+    </div>
+
+    <p class="login-subtexto"> Não possui conta? <span class="botao-cadastre-se" (click)="Navegar('/cadastro')">Cadastre-se!</span></p>
+
+</div>

@@ -1,0 +1,142 @@
+.carrinho-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.carrinho-titulo-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 253px;
+    width: auto;
+    height: 36px;
+    align-content: center;
+
+}
+
+.carrinho-titulo {
+    width: auto;
+    height: auto;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    color: #863D3D;
+}
+
+.carrinho-quantidadeItens {
+    width: auto;
+    height: auto;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #202020;
+}
+
+.carrinho-produtocard {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.cardProdutoCarrinho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-content: center;
+    gap: 80px;
+    margin-top: 10px;
+}
+
+.carrinho-produtocard-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.carrinho-produtocard-info-nome {
+    width: auto;
+    height: auto;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #202020;
+}
+
+.carrinho-produtocard-info-preco {
+    width: auto;
+    height: auto;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #808080;
+}
+
+.carrinho-produtocard-info-quantidade {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #404040;
+}
+
+
+hr.solid {
+    border-top: 3px solid #863D3D;
+}
+
+.carrinho-produtocard-totalcontainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.carrinho-produtocard-totaltexto {
+    width: auto;
+    height: auto;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    color: #000000;
+}
+
+.carrinho-botao-comprar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 25px;
+    gap: 10px;
+    width: auto;
+    height: auto;
+    background: #863D3D;
+    border-radius: 10px;
+}
+
+.carrinho-comprar-texto {
+    width: auto;
+    height: auto;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.aproximar {
+    margin-top: -6%;
+}
